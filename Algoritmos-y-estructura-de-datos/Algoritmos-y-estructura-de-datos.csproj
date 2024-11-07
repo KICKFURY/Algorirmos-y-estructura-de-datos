@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\FormColaCircular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormColaCircular.Designer.cs">
+      <DependentUpon>FormColaCircular.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmColas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FormColaCircular.resx">
+      <DependentUpon>FormColaCircular.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmColas.resx">
       <DependentUpon>frmColas.cs</DependentUpon>
     </EmbeddedResource>

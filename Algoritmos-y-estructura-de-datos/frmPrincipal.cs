@@ -44,5 +44,11 @@ namespace Algoritmos_y_estructura_de_datos
             var frmColas = new frmColas();
             mostrarFormulario(frmColas);
         }
+
+        private void btnColasCirculares_Click(object sender, EventArgs e)
+        {
+            var formColaCircular = new FormColaCircular();
+            mostrarFormulario(formColaCircular);
+        }
     }
 }
