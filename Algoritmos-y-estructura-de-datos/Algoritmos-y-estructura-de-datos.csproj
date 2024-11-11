@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\ListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListaDoble.Designer.cs">
+      <DependentUpon>ListaDoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ListaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListaSimple.Designer.cs">
+      <DependentUpon>ListaSimple.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormColaCircular.cs">
       <SubType>Form</SubType>
     </Compile>
