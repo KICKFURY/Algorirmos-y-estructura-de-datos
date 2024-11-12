@@ -77,10 +77,8 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
         private void ActualizarLista()
         {
             listBoxInventario.Items.Clear();
-            foreach (var pedido in pedidos)
-            {
-                listBoxInventario.Items.Add($"{pedido.nombreProducto} - {pedido.nombreCliente} - {pedido.cantidadProducto} unidades - ${pedido.precioProducto} - Subtotal ${pedido.precioProducto * pedido.cantidadProducto}");
-            }
+            listBoxInventario.Items.AddRange(pedidos.Select(pedido =>
+        $"{pedido.nombreProducto} - {pedido.nombreCliente} - {pedido.cantidadProducto} unidades - ${pedido.precioProducto} - Subtotal ${pedido.precioProducto * pedido.cantidadProducto}").ToArray());
         }
     }
 }

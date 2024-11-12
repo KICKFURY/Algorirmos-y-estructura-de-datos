@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algoritmos\QuickSort.cs" />
+    <Compile Include="Formularios\frmQuickSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmQuickSort.Designer.cs">
+      <DependentUpon>frmQuickSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ListaDoble.cs">
       <SubType>Form</SubType>
     </Compile>

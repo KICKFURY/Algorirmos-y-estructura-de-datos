@@ -29,62 +29,34 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnColasCirculares = new System.Windows.Forms.Button();
             this.btnColas = new System.Windows.Forms.Button();
             this.btnPilas = new System.Windows.Forms.Button();
+            this.btnQuickSort = new System.Windows.Forms.Button();
+            this.btnListaDoble = new System.Windows.Forms.Button();
+            this.btnListaSimple = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.btnColasCirculares);
             this.groupBox1.Controls.Add(this.btnColas);
             this.groupBox1.Controls.Add(this.btnPilas);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(26, 19);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(158, 266);
+            this.groupBox1.Size = new System.Drawing.Size(158, 126);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Algoritmos";
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(17, 230);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Byron";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(17, 194);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Lista doble";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(17, 152);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Lista simple";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.groupBox1.Text = "Pilas y Colas";
             // 
             // btnColasCirculares
             // 
@@ -119,15 +91,98 @@
             this.btnPilas.UseVisualStyleBackColor = true;
             this.btnPilas.Click += new System.EventHandler(this.btnPilas_Click);
             // 
+            // btnQuickSort
+            // 
+            this.btnQuickSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuickSort.Location = new System.Drawing.Point(22, 41);
+            this.btnQuickSort.Name = "btnQuickSort";
+            this.btnQuickSort.Size = new System.Drawing.Size(113, 23);
+            this.btnQuickSort.TabIndex = 3;
+            this.btnQuickSort.Text = "QuickSort";
+            this.btnQuickSort.UseVisualStyleBackColor = true;
+            this.btnQuickSort.Click += new System.EventHandler(this.btnQuickSort_Click);
+            // 
+            // btnListaDoble
+            // 
+            this.btnListaDoble.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListaDoble.Location = new System.Drawing.Point(22, 65);
+            this.btnListaDoble.Name = "btnListaDoble";
+            this.btnListaDoble.Size = new System.Drawing.Size(113, 23);
+            this.btnListaDoble.TabIndex = 2;
+            this.btnListaDoble.Text = "Lista doble";
+            this.btnListaDoble.UseVisualStyleBackColor = true;
+            this.btnListaDoble.Click += new System.EventHandler(this.btnListaDoble_Click);
+            // 
+            // btnListaSimple
+            // 
+            this.btnListaSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListaSimple.Location = new System.Drawing.Point(22, 23);
+            this.btnListaSimple.Name = "btnListaSimple";
+            this.btnListaSimple.Size = new System.Drawing.Size(113, 23);
+            this.btnListaSimple.TabIndex = 1;
+            this.btnListaSimple.Text = "Lista simple";
+            this.btnListaSimple.UseVisualStyleBackColor = true;
+            this.btnListaSimple.Click += new System.EventHandler(this.btnListaSimple_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnListaSimple);
+            this.groupBox2.Controls.Add(this.btnListaDoble);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(26, 151);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(158, 105);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Listas";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnQuickSort);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(202, 28);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(327, 105);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Algoritmos";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(202, 151);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(327, 105);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Arboles";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.groupBox1);
+            this.groupBox5.Controls.Add(this.groupBox4);
+            this.groupBox5.Controls.Add(this.groupBox2);
+            this.groupBox5.Controls.Add(this.groupBox3);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(12, 12);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(535, 274);
+            this.groupBox5.TabIndex = 7;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Estructuras";
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(826, 359);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(556, 305);
+            this.Controls.Add(this.groupBox5);
             this.Name = "frmPrincipal";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -138,9 +193,13 @@
         private System.Windows.Forms.Button btnPilas;
         private System.Windows.Forms.Button btnColasCirculares;
         private System.Windows.Forms.Button btnColas;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnQuickSort;
+        private System.Windows.Forms.Button btnListaDoble;
+        private System.Windows.Forms.Button btnListaSimple;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
     }
 }
 
