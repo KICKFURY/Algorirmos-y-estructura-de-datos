@@ -34,10 +34,6 @@
             this.txtIdFactura = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewClientes = new System.Windows.Forms.DataGridView();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSaldoPendiente = new System.Windows.Forms.TextBox();
             this.txtPlazos = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -102,35 +98,10 @@
             // 
             this.dataGridViewClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column2,
-            this.Column1,
-            this.Column3,
-            this.Column4});
             this.dataGridViewClientes.Location = new System.Drawing.Point(11, 255);
             this.dataGridViewClientes.Name = "dataGridViewClientes";
             this.dataGridViewClientes.Size = new System.Drawing.Size(464, 150);
             this.dataGridViewClientes.TabIndex = 9;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Id de factura";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nombre del cliente";
-            this.Column1.Name = "Column1";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Plazos";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Saldo pendiente";
-            this.Column4.Name = "Column4";
             // 
             // txtSaldoPendiente
             // 
@@ -252,9 +223,5 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnMostrarCola;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
