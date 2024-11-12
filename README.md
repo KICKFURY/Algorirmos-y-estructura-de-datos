@@ -3,12 +3,45 @@
 ## Número de Equipo: #2 
 
 ## Integrantes del Equipo 
-- **Byron Jose Guzman Duarte**
-  - Usuario: [KICKFURY](https://github.com/KICKFURY)
-- **Harold Josue Estrada Picado**
-  - Usuario: [HaroldJEstrada](https://github.com/HaroldJEstrada)
-- **Nohemi Azucena Campos Espinoza**
-   - Usuario: [NohemiCampos](https://github.com/NohemiCampos)
+
+   <table>
+<tr>
+		<td>1</td>
+    <td>
+      Byron José Guzmán Duarte
+    </td>
+		<td>
+			<a href="https://github.com/KICKFURY">
+				<img src="https://avatars.githubusercontent.com/u/92235575?s=72&u=5009d8b695904c05c51fb57a9d59c5e15ddc5fef&v=4" width="24" alt="Avatar of KICKFURY"> KICKFURY
+			</a><br/>
+		</td>
+		<td>Matagalpa - Nicaragua</td>
+	</tr>
+   <tr>
+		<td>2</td>
+    <td>
+      Harold Josue Estrada Picado
+    </td>
+		<td>
+			<a href="https://github.com/HaroldJEstrada">
+				<img src="https://avatars.githubusercontent.com/u/148658740?v=4" width="24" alt="Avatar of HaroldJEstrada"> HaroldJEstrada
+			</a><br/>
+		</td>
+		<td>Matagalpa - Nicaragua</td>
+	</tr>
+      <tr>
+		<td>3</td>
+    <td>
+      Nohemi Azucena Campos Espinoza
+    </td>
+		<td>
+			<a href="https://github.com/NohemiCampos">
+				<img src="https://avatars.githubusercontent.com/u/149031015?v=4" width="24" alt="Avatar of NohemiCampos"> NohemiCampos
+			</a><br/>
+		</td>
+		<td>Matagalpa - Nicaragua</td>
+	</tr>
+ </table>
  
 ## Descripción del Proyecto
 
