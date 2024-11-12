@@ -56,5 +56,11 @@ namespace Algoritmos_y_estructura_de_datos
             var listaSimple = new ListaSimple();
             mostrarFormulario(listaSimple);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ListaDoble listaDoble = new ListaDoble();
+            mostrarFormulario(listaDoble);
+        }
     }
 }

@@ -93,6 +93,9 @@
     <EmbeddedResource Include="Formularios\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListaDoble.resx">
+      <DependentUpon>ListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ListaSimple.resx">
       <DependentUpon>ListaSimple.cs</DependentUpon>
     </EmbeddedResource>
