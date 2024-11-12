@@ -52,10 +52,10 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             // Configurar precios de productos
             preciosProductos = new Dictionary<string, decimal>
             {
-                { "Celular", 599.99m },
-                { "Camara", 299.99m },
-                { "Televisor", 799.99m },
-                { "Bocinas", 149.99m }
+                { "Celular", 599m },
+                { "Camara", 299m },
+                { "Televisor", 799m },
+                { "Bocinas", 149m }
             };
 
             //productos del combobox
