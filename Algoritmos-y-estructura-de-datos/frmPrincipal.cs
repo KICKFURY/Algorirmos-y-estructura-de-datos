@@ -51,10 +51,23 @@ namespace Algoritmos_y_estructura_de_datos
             mostrarFormulario(formColaCircular);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnListaSimple_Click(object sender, EventArgs e)
         {
             var listaSimple = new ListaSimple();
             mostrarFormulario(listaSimple);
         }
+
+        private void btnListaDoble_Click(object sender, EventArgs e)
+        {
+            var listaDoble = new ListaDoble();
+            mostrarFormulario(listaDoble);
+        }
+
+        private void btnQuickSort_Click(object sender, EventArgs e)
+        {
+            var quickSort = new frmQuickSort();
+            mostrarFormulario(quickSort);
+        }
+
     }
 }

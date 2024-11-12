@@ -1,6 +1,6 @@
 ﻿namespace Algoritmos_y_estructura_de_datos.Formularios
 {
-    partial class ListaDoble
+    partial class ListasDobles
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtNoFactura = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -47,15 +48,17 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAgregarInicio = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNoFactura
             // 
-            this.txtNoFactura.Location = new System.Drawing.Point(395, 21);
+            this.txtNoFactura.Location = new System.Drawing.Point(392, 21);
             this.txtNoFactura.Name = "txtNoFactura";
             this.txtNoFactura.Size = new System.Drawing.Size(76, 20);
             this.txtNoFactura.TabIndex = 29;
@@ -64,7 +67,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(364, 22);
+            this.label6.Location = new System.Drawing.Point(361, 22);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 16);
             this.label6.TabIndex = 28;
@@ -73,17 +76,16 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(353, 76);
+            this.btnNuevo.Location = new System.Drawing.Point(350, 76);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 28);
             this.btnNuevo.TabIndex = 27;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(411, 412);
+            this.txtTotal.Location = new System.Drawing.Point(393, 412);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(101, 20);
             this.txtTotal.TabIndex = 21;
@@ -92,7 +94,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(364, 413);
+            this.label5.Location = new System.Drawing.Point(347, 413);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 16);
             this.label5.TabIndex = 22;
@@ -105,7 +107,7 @@
             this.groupBox1.Controls.Add(this.txtProducto);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(26, 128);
+            this.groupBox1.Location = new System.Drawing.Point(23, 128);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(493, 88);
             this.groupBox1.TabIndex = 26;
@@ -149,18 +151,17 @@
             // btnAceptar
             // 
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(247, 75);
+            this.btnAceptar.Location = new System.Drawing.Point(244, 75);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 28);
             this.btnAceptar.TabIndex = 25;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(16, 408);
+            this.btnSalir.Location = new System.Drawing.Point(23, 408);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 28);
             this.btnSalir.TabIndex = 24;
@@ -170,17 +171,16 @@
             // Facturar
             // 
             this.Facturar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Facturar.Location = new System.Drawing.Point(262, 408);
+            this.Facturar.Location = new System.Drawing.Point(229, 408);
             this.Facturar.Name = "Facturar";
             this.Facturar.Size = new System.Drawing.Size(75, 28);
             this.Facturar.TabIndex = 23;
             this.Facturar.Text = "Facturar";
             this.Facturar.UseVisualStyleBackColor = true;
-            this.Facturar.Click += new System.EventHandler(this.Facturar_Click);
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(93, 80);
+            this.txtCantidad.Location = new System.Drawing.Point(90, 80);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(118, 20);
             this.txtCantidad.TabIndex = 20;
@@ -189,7 +189,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 80);
+            this.label4.Location = new System.Drawing.Point(20, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 16);
             this.label4.TabIndex = 19;
@@ -203,7 +203,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvFactura.Location = new System.Drawing.Point(26, 236);
+            this.dgvFactura.Location = new System.Drawing.Point(23, 236);
             this.dgvFactura.Name = "dgvFactura";
             this.dgvFactura.Size = new System.Drawing.Size(493, 131);
             this.dgvFactura.TabIndex = 18;
@@ -223,32 +223,35 @@
             this.Column3.HeaderText = "Precio";
             this.Column3.Name = "Column3";
             // 
-            // btnAgregarInicio
+            // btnAgregar
             // 
-            this.btnAgregarInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarInicio.Location = new System.Drawing.Point(126, 402);
-            this.btnAgregarInicio.Name = "btnAgregarInicio";
-            this.btnAgregarInicio.Size = new System.Drawing.Size(102, 38);
-            this.btnAgregarInicio.TabIndex = 17;
-            this.btnAgregarInicio.Text = "Agregar Inicio";
-            this.btnAgregarInicio.UseVisualStyleBackColor = true;
-            this.btnAgregarInicio.Click += new System.EventHandler(this.btnAgregarInicio_Click);
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(125, 408);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 28);
+            this.btnAgregar.TabIndex = 17;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(108, 14);
+            this.label1.Location = new System.Drawing.Point(38, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 24);
+            this.label1.Size = new System.Drawing.Size(282, 24);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Facturación";
+            this.label1.Text = "Facturación con listas dobles";
             // 
-            // ListaDoble
+            // error
+            // 
+            this.error.ContainerControl = this;
+            // 
+            // ListasDobles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 450);
+            this.ClientSize = new System.Drawing.Size(536, 450);
             this.Controls.Add(this.txtNoFactura);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnNuevo);
@@ -261,13 +264,14 @@
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvFactura);
-            this.Controls.Add(this.btnAgregarInicio);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label1);
-            this.Name = "ListaDoble";
-            this.Text = "ListaDoble";
+            this.Name = "ListasDobles";
+            this.Text = "ListasDobles";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFactura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,7 +298,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.Button btnAgregarInicio;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider error;
     }
 }

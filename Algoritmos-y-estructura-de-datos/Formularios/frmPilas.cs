@@ -178,7 +178,5 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
 
             MessageBox.Show("Nueva factura creada");
         }
-
-
     }
 }

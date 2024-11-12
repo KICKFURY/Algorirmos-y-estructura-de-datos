@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algoritmos\QuickSort.cs" />
+    <Compile Include="Formularios\frmQuickSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmQuickSort.Designer.cs">
+      <DependentUpon>frmQuickSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ListaDoble.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListaDoble.resx">
+      <DependentUpon>ListaDoble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ListaSimple.resx">
       <DependentUpon>ListaSimple.cs</DependentUpon>
