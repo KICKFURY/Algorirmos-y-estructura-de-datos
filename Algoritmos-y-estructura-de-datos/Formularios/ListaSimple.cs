@@ -222,6 +222,15 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
                 txtPrecio.Text = preciosProductos[productoSeleccionado].ToString("0");
             }
         }
-                     
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (Keys.Escape == keyData)
+            {
+                this.Close();
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+
+        }
     }
 }
