@@ -36,8 +36,8 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             capacidadMaxima = 5; // Define el tamaño máximo de la cola circular
             ConfigurarDataGridView();
 
-            txtIdFactura.Enabled = false;
-            txtIdFactura.Text = "1";
+            txtIdFactura.Enabled = false; // Txt desabilitado
+            txtIdFactura.Text = "1"; //El valor con el que comenzaremos la factura
         }
 
         private void ConfigurarDataGridView()
@@ -76,7 +76,7 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
                 }
                 else
                 {
-                    MessageBox.Show("Por favor, complete todos los campos correctamente y asegúrese de que los plazos sean 24 o menos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Por favor, complete todos los campos correctamente y recuerde el plazo es 24 o menos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -100,15 +100,10 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             }
         }
 
-        private void FormColaCircular_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMostrarCola_Click(object sender, EventArgs e)
         {
-            ActualizarDataGridView();
-        }
+            ActualizarDataGridView(); //cuando le demos click al boton despues de una busqueda se
+        }                            //mostrara todo el contnido del DataGrid
 
 
         private void ActualizarDataGridView()
@@ -151,7 +146,7 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
         }
 
 
-        private void LimpiarCampos()
+        private void LimpiarCampos() 
         {
             txtNombreCliente.Clear();
             txtSaldoPendiente.Clear();
@@ -159,10 +154,14 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             txtBuscar.Clear();
         }
 
+        private void FormColaCircular_Load(object sender, EventArgs e)
+        {
+
+        }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (Keys.Escape == keyData)
+            if (Keys.Escape == keyData) //Salir del formulario hacia el menu principal usando la tecla "esc"
             {
                 this.Close();
             }
