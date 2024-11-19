@@ -69,5 +69,9 @@ namespace Algoritmos_y_estructura_de_datos
             mostrarFormulario(quickSort);
         }
 
+        private void btnBubleSort_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

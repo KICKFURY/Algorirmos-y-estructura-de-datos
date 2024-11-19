@@ -109,6 +109,12 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
                 return;
             }
 
+            if (primero.Estado != "Procesado")//Varificamos si la factura ah sido eliminada
+            {
+                MessageBox.Show($"La factura #{primero.NumeroFactura} no puede ser eliminada porque no está procesada.",
+                        "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             // Guardamos la información de la factura que vamos a eliminar
             int numeroFacturaEliminada = primero.NumeroFactura;
 
