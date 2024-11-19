@@ -71,7 +71,8 @@ namespace Algoritmos_y_estructura_de_datos
 
         private void btnBubleSort_Click(object sender, EventArgs e)
         {
-
+            var BubleSort = new BubleSort();
+            mostrarFormulario(BubleSort);
         }
     }
 }

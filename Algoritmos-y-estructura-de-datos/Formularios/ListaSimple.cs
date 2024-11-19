@@ -45,6 +45,7 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             InitializeComponent();
             primero = null;
             ConfigurarInicial();
+            dateTimePicker1.Enabled = false;
         }
 
         private void ConfigurarInicial()
