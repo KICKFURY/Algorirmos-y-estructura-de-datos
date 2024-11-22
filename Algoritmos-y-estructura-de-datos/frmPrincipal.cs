@@ -74,5 +74,11 @@ namespace Algoritmos_y_estructura_de_datos
             var BubleSort = new BubleSort();
             mostrarFormulario(BubleSort);
         }
+
+        private void btnSelectionSort_Click(object sender, EventArgs e)
+        {
+            var SelectionSort = new SelectionSort();
+            mostrarFormulario(SelectionSort);
+        }
     }
 }
