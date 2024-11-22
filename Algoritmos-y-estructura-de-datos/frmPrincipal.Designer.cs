@@ -37,16 +37,16 @@
             this.btnListaSimple = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btnBinarios = new System.Windows.Forms.Button();
-            this.btnAVL = new System.Windows.Forms.Button();
-            this.btnBubleSort = new System.Windows.Forms.Button();
             this.btnHeapSort = new System.Windows.Forms.Button();
+            this.btnBubleSort = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnAVL = new System.Windows.Forms.Button();
+            this.btnBinarios = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnMARSHALL = new System.Windows.Forms.Button();
             this.btnFLOYD = new System.Windows.Forms.Button();
             this.btnDIJKSTRA = new System.Windows.Forms.Button();
-            this.btnMARSHALL = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -159,6 +159,27 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Algoritmos";
             // 
+            // btnHeapSort
+            // 
+            this.btnHeapSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHeapSort.Location = new System.Drawing.Point(244, 39);
+            this.btnHeapSort.Name = "btnHeapSort";
+            this.btnHeapSort.Size = new System.Drawing.Size(113, 23);
+            this.btnHeapSort.TabIndex = 5;
+            this.btnHeapSort.Text = "HeapSort";
+            this.btnHeapSort.UseVisualStyleBackColor = true;
+            this.btnHeapSort.Click += new System.EventHandler(this.btnHeapSort_Click);
+            // 
+            // btnBubleSort
+            // 
+            this.btnBubleSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBubleSort.Location = new System.Drawing.Point(6, 39);
+            this.btnBubleSort.Name = "btnBubleSort";
+            this.btnBubleSort.Size = new System.Drawing.Size(113, 23);
+            this.btnBubleSort.TabIndex = 4;
+            this.btnBubleSort.Text = "BubleSort";
+            this.btnBubleSort.UseVisualStyleBackColor = true;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnAVL);
@@ -170,6 +191,26 @@
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Arboles";
+            // 
+            // btnAVL
+            // 
+            this.btnAVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAVL.Location = new System.Drawing.Point(194, 28);
+            this.btnAVL.Name = "btnAVL";
+            this.btnAVL.Size = new System.Drawing.Size(113, 23);
+            this.btnAVL.TabIndex = 5;
+            this.btnAVL.Text = "AVL";
+            this.btnAVL.UseVisualStyleBackColor = true;
+            // 
+            // btnBinarios
+            // 
+            this.btnBinarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBinarios.Location = new System.Drawing.Point(60, 28);
+            this.btnBinarios.Name = "btnBinarios";
+            this.btnBinarios.Size = new System.Drawing.Size(113, 23);
+            this.btnBinarios.TabIndex = 4;
+            this.btnBinarios.Text = "Binarios";
+            this.btnBinarios.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -186,46 +227,6 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Estructuras";
             // 
-            // btnBinarios
-            // 
-            this.btnBinarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBinarios.Location = new System.Drawing.Point(60, 28);
-            this.btnBinarios.Name = "btnBinarios";
-            this.btnBinarios.Size = new System.Drawing.Size(113, 23);
-            this.btnBinarios.TabIndex = 4;
-            this.btnBinarios.Text = "Binarios";
-            this.btnBinarios.UseVisualStyleBackColor = true;
-            // 
-            // btnAVL
-            // 
-            this.btnAVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAVL.Location = new System.Drawing.Point(194, 28);
-            this.btnAVL.Name = "btnAVL";
-            this.btnAVL.Size = new System.Drawing.Size(113, 23);
-            this.btnAVL.TabIndex = 5;
-            this.btnAVL.Text = "AVL";
-            this.btnAVL.UseVisualStyleBackColor = true;
-            // 
-            // btnBubleSort
-            // 
-            this.btnBubleSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBubleSort.Location = new System.Drawing.Point(6, 39);
-            this.btnBubleSort.Name = "btnBubleSort";
-            this.btnBubleSort.Size = new System.Drawing.Size(113, 23);
-            this.btnBubleSort.TabIndex = 4;
-            this.btnBubleSort.Text = "BubleSort";
-            this.btnBubleSort.UseVisualStyleBackColor = true;
-            // 
-            // btnHeapSort
-            // 
-            this.btnHeapSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHeapSort.Location = new System.Drawing.Point(244, 39);
-            this.btnHeapSort.Name = "btnHeapSort";
-            this.btnHeapSort.Size = new System.Drawing.Size(113, 23);
-            this.btnHeapSort.TabIndex = 5;
-            this.btnHeapSort.Text = "HeapSort";
-            this.btnHeapSort.UseVisualStyleBackColor = true;
-            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.btnMARSHALL);
@@ -238,6 +239,16 @@
             this.groupBox6.TabIndex = 7;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Grafos";
+            // 
+            // btnMARSHALL
+            // 
+            this.btnMARSHALL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMARSHALL.Location = new System.Drawing.Point(238, 28);
+            this.btnMARSHALL.Name = "btnMARSHALL";
+            this.btnMARSHALL.Size = new System.Drawing.Size(113, 23);
+            this.btnMARSHALL.TabIndex = 6;
+            this.btnMARSHALL.Text = "MARSHALL";
+            this.btnMARSHALL.UseVisualStyleBackColor = true;
             // 
             // btnFLOYD
             // 
@@ -258,16 +269,6 @@
             this.btnDIJKSTRA.TabIndex = 4;
             this.btnDIJKSTRA.Text = "DIJKSTRA";
             this.btnDIJKSTRA.UseVisualStyleBackColor = true;
-            // 
-            // btnMARSHALL
-            // 
-            this.btnMARSHALL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMARSHALL.Location = new System.Drawing.Point(238, 28);
-            this.btnMARSHALL.Name = "btnMARSHALL";
-            this.btnMARSHALL.Size = new System.Drawing.Size(113, 23);
-            this.btnMARSHALL.TabIndex = 6;
-            this.btnMARSHALL.Text = "MARSHALL";
-            this.btnMARSHALL.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 

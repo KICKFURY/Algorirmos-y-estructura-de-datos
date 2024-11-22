@@ -69,5 +69,10 @@ namespace Algoritmos_y_estructura_de_datos
             mostrarFormulario(quickSort);
         }
 
+        private void btnHeapSort_Click(object sender, EventArgs e)
+        {
+            var heapSort = new HeapSort();
+            mostrarFormulario(heapSort);
+        }
     }
 }
