@@ -119,7 +119,7 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
                     ActualizarListBox();
 
                     // Pausar para observar el ordenamiento
-                    await Task.Delay(1000);
+                    await Task.Delay(1500);
                 }
             }
 
@@ -148,6 +148,16 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             MessageBox.Show($"El total de todos los productos es: {sumaTotal:C}", "Total", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (Keys.Escape == keyData)
+            {
+                this.Close();
+            }
+            return base.ProcessCmdKey(ref msg, keyData);//La tecla esc permite volver
+                                                        //al menu principal
+
+        }
+
     }
 }
