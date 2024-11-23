@@ -47,7 +47,9 @@
             this.btnMARSHALL = new System.Windows.Forms.Button();
             this.btnFLOYD = new System.Windows.Forms.Button();
             this.btnDIJKSTRA = new System.Windows.Forms.Button();
-            this.btnMARSHALL = new System.Windows.Forms.Button();
+            this.btnSelection = new System.Windows.Forms.Button();
+            this.btnShakerSort = new System.Windows.Forms.Button();
+            this.btnShellSort = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -105,7 +107,7 @@
             // btnQuickSort
             // 
             this.btnQuickSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuickSort.Location = new System.Drawing.Point(125, 25);
+            this.btnQuickSort.Location = new System.Drawing.Point(128, 19);
             this.btnQuickSort.Name = "btnQuickSort";
             this.btnQuickSort.Size = new System.Drawing.Size(113, 23);
             this.btnQuickSort.TabIndex = 3;
@@ -149,7 +151,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnSelectionSort);
+            this.groupBox3.Controls.Add(this.btnShellSort);
+            this.groupBox3.Controls.Add(this.btnShakerSort);
+            this.groupBox3.Controls.Add(this.btnSelection);
             this.groupBox3.Controls.Add(this.btnHeapSort);
             this.groupBox3.Controls.Add(this.btnBubleSort);
             this.groupBox3.Controls.Add(this.btnQuickSort);
@@ -160,6 +164,24 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Algoritmos";
+            // 
+            // btnHeapSort
+            // 
+            this.btnHeapSort.Location = new System.Drawing.Point(247, 19);
+            this.btnHeapSort.Name = "btnHeapSort";
+            this.btnHeapSort.Size = new System.Drawing.Size(113, 23);
+            this.btnHeapSort.TabIndex = 0;
+            this.btnHeapSort.Text = "HeapSort";
+            this.btnHeapSort.Click += new System.EventHandler(this.btnHeapSort_Click);
+            // 
+            // btnBubleSort
+            // 
+            this.btnBubleSort.Location = new System.Drawing.Point(12, 19);
+            this.btnBubleSort.Name = "btnBubleSort";
+            this.btnBubleSort.Size = new System.Drawing.Size(113, 23);
+            this.btnBubleSort.TabIndex = 1;
+            this.btnBubleSort.Text = "BubleSort";
+            this.btnBubleSort.Click += new System.EventHandler(this.btnBubleSort_Click);
             // 
             // groupBox4
             // 
@@ -182,6 +204,7 @@
             this.btnAVL.TabIndex = 5;
             this.btnAVL.Text = "AVL";
             this.btnAVL.UseVisualStyleBackColor = true;
+            this.btnAVL.Click += new System.EventHandler(this.btnAVL_Click);
             // 
             // btnBinarios
             // 
@@ -192,6 +215,7 @@
             this.btnBinarios.TabIndex = 4;
             this.btnBinarios.Text = "Binarios";
             this.btnBinarios.UseVisualStyleBackColor = true;
+            this.btnBinarios.Click += new System.EventHandler(this.btnBinarios_Click);
             // 
             // groupBox5
             // 
@@ -230,6 +254,7 @@
             this.btnMARSHALL.TabIndex = 6;
             this.btnMARSHALL.Text = "MARSHALL";
             this.btnMARSHALL.UseVisualStyleBackColor = true;
+            this.btnMARSHALL.Click += new System.EventHandler(this.btnMARSHALL_Click);
             // 
             // btnFLOYD
             // 
@@ -240,6 +265,7 @@
             this.btnFLOYD.TabIndex = 5;
             this.btnFLOYD.Text = "FLOYD";
             this.btnFLOYD.UseVisualStyleBackColor = true;
+            this.btnFLOYD.Click += new System.EventHandler(this.btnFLOYD_Click);
             // 
             // btnDIJKSTRA
             // 
@@ -250,16 +276,34 @@
             this.btnDIJKSTRA.TabIndex = 4;
             this.btnDIJKSTRA.Text = "DIJKSTRA";
             this.btnDIJKSTRA.UseVisualStyleBackColor = true;
+            this.btnDIJKSTRA.Click += new System.EventHandler(this.btnDIJKSTRA_Click);
             // 
-            // btnMARSHALL
+            // btnSelection
             // 
-            this.btnMARSHALL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMARSHALL.Location = new System.Drawing.Point(238, 28);
-            this.btnMARSHALL.Name = "btnMARSHALL";
-            this.btnMARSHALL.Size = new System.Drawing.Size(113, 23);
-            this.btnMARSHALL.TabIndex = 6;
-            this.btnMARSHALL.Text = "MARSHALL";
-            this.btnMARSHALL.UseVisualStyleBackColor = true;
+            this.btnSelection.Location = new System.Drawing.Point(128, 54);
+            this.btnSelection.Name = "btnSelection";
+            this.btnSelection.Size = new System.Drawing.Size(113, 23);
+            this.btnSelection.TabIndex = 4;
+            this.btnSelection.Text = "SelectionSort";
+            this.btnSelection.Click += new System.EventHandler(this.btnSelectionSort_Click);
+            // 
+            // btnShakerSort
+            // 
+            this.btnShakerSort.Location = new System.Drawing.Point(247, 54);
+            this.btnShakerSort.Name = "btnShakerSort";
+            this.btnShakerSort.Size = new System.Drawing.Size(113, 23);
+            this.btnShakerSort.TabIndex = 5;
+            this.btnShakerSort.Text = "ShakerSort";
+            this.btnShakerSort.Click += new System.EventHandler(this.btnShakerSort_Click);
+            // 
+            // btnShellSort
+            // 
+            this.btnShellSort.Location = new System.Drawing.Point(12, 54);
+            this.btnShellSort.Name = "btnShellSort";
+            this.btnShellSort.Size = new System.Drawing.Size(113, 23);
+            this.btnShellSort.TabIndex = 6;
+            this.btnShellSort.Text = "ShellSort";
+            this.btnShellSort.Click += new System.EventHandler(this.btnShellSort_Click);
             // 
             // frmPrincipal
             // 
@@ -301,6 +345,9 @@
         private System.Windows.Forms.Button btnFLOYD;
         private System.Windows.Forms.Button btnDIJKSTRA;
         private System.Windows.Forms.Button btnSelectionSort;
+        private System.Windows.Forms.Button btnSelection;
+        private System.Windows.Forms.Button btnShakerSort;
+        private System.Windows.Forms.Button btnShellSort;
     }
 }
 

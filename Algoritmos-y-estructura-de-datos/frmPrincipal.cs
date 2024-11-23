@@ -80,5 +80,54 @@ namespace Algoritmos_y_estructura_de_datos
             var SelectionSort = new SelectionSort();
             mostrarFormulario(SelectionSort);
         }
+
+        private void btnHeapSort_Click(object sender, EventArgs e)
+        {
+            var HeapSort = new HeapSort();
+            mostrarFormulario(HeapSort);
+        }
+
+        private void btnBinarios_Click(object sender, EventArgs e)
+        {
+            var arbolesBinarios = new frmArbolBinario();
+            mostrarFormulario(arbolesBinarios);
+        }
+
+        private void btnShellSort_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void btnShakerSort_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+
+        private void btnAVL_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void btnDIJKSTRA_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void btnFLOYD_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void btnMARSHALL_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }
