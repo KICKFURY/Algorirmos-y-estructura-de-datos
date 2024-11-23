@@ -69,10 +69,16 @@ namespace Algoritmos_y_estructura_de_datos
             mostrarFormulario(quickSort);
         }
 
-        private void btnHeapSort_Click(object sender, EventArgs e)
+        private void btnBubleSort_Click(object sender, EventArgs e)
         {
-            var heapSort = new HeapSort();
-            mostrarFormulario(heapSort);
+            var BubleSort = new BubleSort();
+            mostrarFormulario(BubleSort);
+        }
+
+        private void btnSelectionSort_Click(object sender, EventArgs e)
+        {
+            var SelectionSort = new SelectionSort();
+            mostrarFormulario(SelectionSort);
         }
     }
 }

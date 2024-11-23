@@ -35,12 +35,12 @@
             this.cmbProductos = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnProcesar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnProcesar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgFacturas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,16 +101,6 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // btnProcesar
-            // 
-            this.btnProcesar.Location = new System.Drawing.Point(417, 220);
-            this.btnProcesar.Name = "btnProcesar";
-            this.btnProcesar.Size = new System.Drawing.Size(107, 23);
-            this.btnProcesar.TabIndex = 9;
-            this.btnProcesar.Text = "Procesar Factura";
-            this.btnProcesar.UseVisualStyleBackColor = true;
-            this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -157,6 +147,16 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // btnProcesar
+            // 
+            this.btnProcesar.Location = new System.Drawing.Point(417, 220);
+            this.btnProcesar.Name = "btnProcesar";
+            this.btnProcesar.Size = new System.Drawing.Size(107, 23);
+            this.btnProcesar.TabIndex = 9;
+            this.btnProcesar.Text = "Procesar Factura";
+            this.btnProcesar.UseVisualStyleBackColor = true;
+            this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
+            // 
             // ListaSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,11 +192,11 @@
         private System.Windows.Forms.ComboBox cmbProductos;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnProcesar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnProcesar;
     }
 }

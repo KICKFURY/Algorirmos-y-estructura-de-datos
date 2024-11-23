@@ -47,6 +47,7 @@
             this.btnMARSHALL = new System.Windows.Forms.Button();
             this.btnFLOYD = new System.Windows.Forms.Button();
             this.btnDIJKSTRA = new System.Windows.Forms.Button();
+            this.btnMARSHALL = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -104,7 +105,7 @@
             // btnQuickSort
             // 
             this.btnQuickSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuickSort.Location = new System.Drawing.Point(125, 39);
+            this.btnQuickSort.Location = new System.Drawing.Point(125, 25);
             this.btnQuickSort.Name = "btnQuickSort";
             this.btnQuickSort.Size = new System.Drawing.Size(113, 23);
             this.btnQuickSort.TabIndex = 3;
@@ -148,6 +149,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnSelectionSort);
             this.groupBox3.Controls.Add(this.btnHeapSort);
             this.groupBox3.Controls.Add(this.btnBubleSort);
             this.groupBox3.Controls.Add(this.btnQuickSort);
@@ -158,27 +160,6 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Algoritmos";
-            // 
-            // btnHeapSort
-            // 
-            this.btnHeapSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHeapSort.Location = new System.Drawing.Point(244, 39);
-            this.btnHeapSort.Name = "btnHeapSort";
-            this.btnHeapSort.Size = new System.Drawing.Size(113, 23);
-            this.btnHeapSort.TabIndex = 5;
-            this.btnHeapSort.Text = "HeapSort";
-            this.btnHeapSort.UseVisualStyleBackColor = true;
-            this.btnHeapSort.Click += new System.EventHandler(this.btnHeapSort_Click);
-            // 
-            // btnBubleSort
-            // 
-            this.btnBubleSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBubleSort.Location = new System.Drawing.Point(6, 39);
-            this.btnBubleSort.Name = "btnBubleSort";
-            this.btnBubleSort.Size = new System.Drawing.Size(113, 23);
-            this.btnBubleSort.TabIndex = 4;
-            this.btnBubleSort.Text = "BubleSort";
-            this.btnBubleSort.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -270,6 +251,16 @@
             this.btnDIJKSTRA.Text = "DIJKSTRA";
             this.btnDIJKSTRA.UseVisualStyleBackColor = true;
             // 
+            // btnMARSHALL
+            // 
+            this.btnMARSHALL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMARSHALL.Location = new System.Drawing.Point(238, 28);
+            this.btnMARSHALL.Name = "btnMARSHALL";
+            this.btnMARSHALL.Size = new System.Drawing.Size(113, 23);
+            this.btnMARSHALL.TabIndex = 6;
+            this.btnMARSHALL.Text = "MARSHALL";
+            this.btnMARSHALL.UseVisualStyleBackColor = true;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +300,7 @@
         private System.Windows.Forms.Button btnMARSHALL;
         private System.Windows.Forms.Button btnFLOYD;
         private System.Windows.Forms.Button btnDIJKSTRA;
+        private System.Windows.Forms.Button btnSelectionSort;
     }
 }
 

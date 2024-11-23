@@ -45,6 +45,7 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             InitializeComponent();
             primero = null;
             ConfigurarInicial();
+            dateTimePicker1.Enabled = false;
         }
 
         private void ConfigurarInicial()
@@ -109,6 +110,12 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
                 return;
             }
 
+            if (primero.Estado != "Procesado")//Varificamos si la factura ah sido eliminada
+            {
+                MessageBox.Show($"La factura #{primero.NumeroFactura} no puede ser eliminada porque no está procesada.",
+                        "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             // Guardamos la información de la factura que vamos a eliminar
             int numeroFacturaEliminada = primero.NumeroFactura;
 
@@ -222,6 +229,15 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
                 txtPrecio.Text = preciosProductos[productoSeleccionado].ToString("0");
             }
         }
-                     
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (Keys.Escape == keyData)
+            {
+                this.Close();
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+
+        }
     }
 }

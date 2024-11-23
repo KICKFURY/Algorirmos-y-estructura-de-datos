@@ -18,6 +18,7 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
         public double SaldoPendiente { get; set; }
         public string IdFactura { get; set; }
         public int Plazos { get; set; }
+        public bool Procesado { get; set; }
     }
 
 
@@ -34,6 +35,9 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             colaClientes = new Queue<Cliente>();
             capacidadMaxima = 5; // Define el tamaño máximo de la cola circular
             ConfigurarDataGridView();
+
+            txtIdFactura.Enabled = false; // Txt desabilitado
+            txtIdFactura.Text = "1"; //El valor con el que comenzaremos la factura
         }
 
         private void ConfigurarDataGridView()
@@ -50,25 +54,29 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             {
                 if (!string.IsNullOrEmpty(txtNombreCliente.Text) &&
                     double.TryParse(txtSaldoPendiente.Text, out double saldoPendiente) &&
-                    !string.IsNullOrEmpty(txtIdFactura.Text) &&
-                    int.TryParse(txtPlazos.Text, out int plazos))
+                    int.TryParse(txtPlazos.Text, out int plazos) && plazos <= 24) // Límite de plazos a 24
                 {
                     Cliente nuevoCliente = new Cliente
                     {
                         NombreCliente = txtNombreCliente.Text,
                         SaldoPendiente = saldoPendiente,
+                        Plazos = plazos,
                         IdFactura = txtIdFactura.Text,
-                        Plazos = plazos
+                        Procesado = false
                     };
 
                     colaClientes.Enqueue(nuevoCliente);
                     ActualizarDataGridView();
                     LimpiarCampos();
+
+                    // Incrementar ID de la factura
+                    txtIdFactura.Text = (int.Parse(txtIdFactura.Text) + 1).ToString();
+
                     MessageBox.Show("Cliente agregado exitosamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Por favor, complete todos los campos correctamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Por favor, complete todos los campos correctamente y recuerde el plazo es 24 o menos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -92,15 +100,10 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             }
         }
 
-        private void FormColaCircular_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMostrarCola_Click(object sender, EventArgs e)
         {
-            ActualizarDataGridView();
-        }
+            ActualizarDataGridView(); //cuando le demos click al boton despues de una busqueda se
+        }                            //mostrara todo el contnido del DataGrid
 
 
         private void ActualizarDataGridView()
@@ -119,15 +122,18 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             if (!string.IsNullOrEmpty(nombreCliente))
             {
                 bool encontrado = false;
+                dataGridViewClientes.Rows.Clear(); //mostrar solo el cliente buscado
+
                 foreach (Cliente cliente in colaClientes)
                 {
                     if (cliente.NombreCliente.Equals(nombreCliente, StringComparison.OrdinalIgnoreCase))
                     {
-                        MessageBox.Show($"Cliente encontrado:\nNombre: {cliente.NombreCliente}\nSaldo Pendiente: {cliente.SaldoPendiente}\nID Factura: {cliente.IdFactura}\nPlazos: {cliente.Plazos}", "Cliente Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        dataGridViewClientes.Rows.Add(cliente.NombreCliente, cliente.SaldoPendiente, cliente.IdFactura, cliente.Plazos);
                         encontrado = true;
                         break;
                     }
                 }
+
                 if (!encontrado)
                 {
                     MessageBox.Show("Cliente no encontrado en la cola.", "No Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -140,19 +146,22 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
         }
 
 
-        private void LimpiarCampos()
+        private void LimpiarCampos() 
         {
             txtNombreCliente.Clear();
             txtSaldoPendiente.Clear();
-            txtIdFactura.Clear();
             txtPlazos.Clear();
             txtBuscar.Clear();
         }
 
+        private void FormColaCircular_Load(object sender, EventArgs e)
+        {
+
+        }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (Keys.Escape == keyData)
+            if (Keys.Escape == keyData) //Salir del formulario hacia el menu principal usando la tecla "esc"
             {
                 this.Close();
             }

@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algoritmos\QuickSort.cs" />
+    <Compile Include="Formularios\BubleSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\BubleSort.Designer.cs">
+      <DependentUpon>BubleSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmQuickSort.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     <Compile Include="Formularios\frmPilas.Designer.cs">
       <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\SelectionSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\SelectionSort.Designer.cs">
+      <DependentUpon>SelectionSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\BubleSort.resx">
+      <DependentUpon>BubleSort.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormColaCircular.resx">
       <DependentUpon>FormColaCircular.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ListaSimple.resx">
       <DependentUpon>ListaSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\SelectionSort.resx">
+      <DependentUpon>SelectionSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
