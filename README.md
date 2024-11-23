@@ -5,8 +5,18 @@
 ## Integrantes del Equipo 
 
    <table>
+	   <thead>
+		   <td>
+			  Nombre 
+		   </td>	
+		   <td>
+			  Usuario 
+		   </td>
+		   <td>
+			  Formulario realizado 
+		   </td>
+	   </thead>
 <tr>
-		<td>1</td>
     <td>
       Byron José Guzmán Duarte
     </td>
@@ -15,10 +25,13 @@
 				<img src="https://avatars.githubusercontent.com/u/92235575?s=72&u=5009d8b695904c05c51fb57a9d59c5e15ddc5fef&v=4" width="24" alt="Avatar of KICKFURY"> KICKFURY
 			</a><br/>
 		</td>
-		<td>Matagalpa - Nicaragua</td>
+		<td>
+			<li>Colas</li>
+			<li>QuickSort</li>
+			<li>Árboles binarios</li>
+		</td>
 	</tr>
    <tr>
-		<td>2</td>
     <td>
       Harold Josue Estrada Picado
     </td>
@@ -27,10 +40,14 @@
 				<img src="https://avatars.githubusercontent.com/u/148658740?v=4" width="24" alt="Avatar of HaroldJEstrada"> HaroldJEstrada
 			</a><br/>
 		</td>
-		<td>Matagalpa - Nicaragua</td>
+		<td>
+			<li>Colas circulares</li>
+			<li>Lista simple</li>
+			<li>BubleSort</li>
+			<li>SelectSort</li>
+		</td>
 	</tr>
       <tr>
-		<td>3</td>
     <td>
       Nohemi Azucena Campos Espinoza
     </td>
@@ -39,7 +56,11 @@
 				<img src="https://avatars.githubusercontent.com/u/149031015?v=4" width="24" alt="Avatar of NohemiCampos"> NohemiCampos
 			</a><br/>
 		</td>
-		<td>Matagalpa - Nicaragua</td>
+		<td>
+			<li>Pilas</li>
+			<li>Listas dobles</li>
+			<li>HeapSort</li>
+		</td>
 	</tr>
  </table>
  
