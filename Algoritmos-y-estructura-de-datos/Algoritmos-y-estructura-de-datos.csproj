@@ -124,6 +124,12 @@
     <Compile Include="Formularios\SelectionSort.Designer.cs">
       <DependentUpon>SelectionSort.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ShellSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ShellSort.Designer.cs">
+      <DependentUpon>ShellSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\SelectionSort.resx">
       <DependentUpon>SelectionSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ShellSort.resx">
+      <DependentUpon>ShellSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

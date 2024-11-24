@@ -95,8 +95,8 @@ namespace Algoritmos_y_estructura_de_datos
 
         private void btnShellSort_Click(object sender, EventArgs e)
         {
-
-
+            var shellsort = new ShellSort();
+            mostrarFormulario(shellsort);
         }
 
         private void btnShakerSort_Click(object sender, EventArgs e)
