@@ -120,7 +120,8 @@ namespace Algoritmos_y_estructura_de_datos
 
         private void btnFLOYD_Click(object sender, EventArgs e)
         {
-
+            var Floyd_Warshall = new Floyd_Warshall();
+            mostrarFormulario(Floyd_Warshall);
 
         }
 

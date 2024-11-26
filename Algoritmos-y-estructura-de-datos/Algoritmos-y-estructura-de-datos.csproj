@@ -70,6 +70,12 @@
     <Compile Include="Formularios\BubleSort.Designer.cs">
       <DependentUpon>BubleSort.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Floyd-Warshall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Floyd-Warshall.Designer.cs">
+      <DependentUpon>Floyd-Warshall.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmArbolBinario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\BubleSort.resx">
       <DependentUpon>BubleSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Floyd-Warshall.resx">
+      <DependentUpon>Floyd-Warshall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormColaCircular.resx">
       <DependentUpon>FormColaCircular.cs</DependentUpon>
