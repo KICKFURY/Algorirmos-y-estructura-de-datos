@@ -30,38 +30,66 @@ namespace Algoritmos_y_estructura_de_datos.Clases
 
         private void InsertarRecursivo(Nodo nodoActual, Producto data)
         {
-            if (data.precio < nodoActual.Data.precio)
+            bool esIzquierda = data.precio < nodoActual.Data.precio;
+            Nodo siguiente = esIzquierda ? nodoActual.Izquierda : nodoActual.Derecho;
+            
+            if (siguiente == null) 
             {
-                if (nodoActual.Izquierda == null)
-                {
+                if (esIzquierda)
                     nodoActual.Izquierda = new Nodo(data);
-                } 
-                else
-                {
-                    InsertarRecursivo(nodoActual.Izquierda, data);
-                }
-            }
-            else
-            {
-                if(nodoActual.Derecho == null)
-                {
+                else 
                     nodoActual.Derecho = new Nodo(data);
-                }
-                else
-                {
-                    InsertarRecursivo(nodoActual.Derecho, data);
-                }
+            } 
+            else 
+            { 
+                InsertarRecursivo(siguiente, data);
             }
         }
 
-        public void RecorrerEnOrden(Nodo nodo, Action<Producto> accion)
+        public Nodo Eliminar(Nodo raiz, decimal precio)
         {
-            if (nodo != null)
+            if (raiz == null)
             {
-                RecorrerEnOrden(nodo.Izquierda, accion);
-                accion(nodo.Data);
-                RecorrerEnOrden(nodo.Derecho, accion);
+                return raiz;
             }
+
+            if (precio < raiz.Data.precio)
+            {
+                raiz.Izquierda = Eliminar(raiz.Izquierda, precio);
+            }
+            else if (precio > raiz.Data.precio)
+            {
+                raiz.Derecho = Eliminar(raiz.Derecho, precio);
+            }
+            else
+            {
+                if (raiz.Izquierda == null)
+                {
+                    return raiz.Derecho;
+                }
+                else if (raiz.Derecho == null)
+                {
+                    return raiz.Izquierda;
+                }
+
+                Nodo temp = NodoConValorMinimo(raiz.Derecho);
+                raiz.Data = temp.Data;
+                raiz.Derecho = Eliminar(raiz.Derecho, temp.Data.id);
+            }
+
+            return raiz;
+        }
+
+        private Nodo NodoConValorMinimo(Nodo nodo)
+        {
+            Nodo actual = nodo;
+
+            while (actual.Izquierda != null)
+            {
+                actual = actual.Izquierda;
+            }
+
+            return actual;
         }
     }
 }

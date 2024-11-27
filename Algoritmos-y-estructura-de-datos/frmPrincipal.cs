@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -101,28 +102,26 @@ namespace Algoritmos_y_estructura_de_datos
 
         private void btnShakerSort_Click(object sender, EventArgs e)
         {
-
-
+            var shakerSort = new ShakerSort();
+            mostrarFormulario(shakerSort);
         }
-
 
         private void btnAVL_Click(object sender, EventArgs e)
         {
-
-
+            var AVL = new frmArbolAVL();
+            mostrarFormulario(AVL);
         }
 
         private void btnDIJKSTRA_Click(object sender, EventArgs e)
         {
-
-
+            var dijkstra = new frmDIJKSTRA();
+            mostrarFormulario(dijkstra);
         }
 
         private void btnFLOYD_Click(object sender, EventArgs e)
         {
             var Floyd_Warshall = new Floyd_Warshall();
             mostrarFormulario(Floyd_Warshall);
-
         }
 
         private void btnMARSHALL_Click(object sender, EventArgs e)

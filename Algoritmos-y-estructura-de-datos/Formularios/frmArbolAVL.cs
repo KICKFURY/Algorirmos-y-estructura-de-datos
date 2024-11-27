@@ -1,20 +1,26 @@
 ﻿using Algoritmos_y_estructura_de_datos.Algoritmos;
 using Algoritmos_y_estructura_de_datos.Clases;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Algoritmos_y_estructura_de_datos.Formularios
 {
-    public partial class frmArbolBinario : Form
+    public partial class frmArbolAVL : Form
     {
-        private ArbolBinario arbol;
+        private ArbolAVL arbol;
 
-        public frmArbolBinario()
+        public frmArbolAVL()
         {
             InitializeComponent();
-            arbol = new ArbolBinario();
-            txtId.Text = "1";
+            arbol = new ArbolAVL();
+            txtId.Text = 1.ToString();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -27,27 +33,18 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
 
             if (int.TryParse(txtPrecio.Text, out int precio))
             {
-                try
-                {
-                    int id = int.Parse(txtId.Text);
-                    string nombre = txtNombreProducto.Text;
+                int id = int.Parse(txtId.Text);
+                string nombre = txtNombreProducto.Text;
 
-                    Producto producto = new Producto(id, nombre, precio);
-                    arbol.Insertar(producto);
+                Producto producto = new Producto(id, nombre, precio);
+                arbol.Raiz = arbol.Insertar(arbol.Raiz, producto);
 
-                    txtId.Text = (id + 1).ToString();
-                    txtNombreProducto.Clear();
-                    txtPrecio.Clear();
-                    txtNombreProducto.Focus();
+                txtId.Text = (id + 1).ToString();
+                txtNombreProducto.Clear();
+                txtPrecio.Clear();
+                txtId.Focus();
 
-                    MessageBox.Show("Producto agregado correctamente");
-
-                    panelArbol.Invalidate();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                panelArbol.Invalidate();
             }
             else
             {
@@ -58,15 +55,9 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtIdEliminar.Text))
-            {
-                MessageBox.Show("ID es requerido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             try
             {
-                if (decimal.TryParse(txtIdEliminar.Text, out decimal id))
+                if (int.TryParse(txtIdEliminar.Text, out int id))
                 {
                     arbol.Raiz = arbol.Eliminar(arbol.Raiz, id);
 
@@ -75,11 +66,16 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
 
                     panelArbol.Invalidate();
                 }
+                else
+                {
+                    MessageBox.Show("Ingrese valores validos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Ingrese valores validos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -91,27 +87,27 @@ namespace Algoritmos_y_estructura_de_datos.Formularios
             }
         }
 
-        private void DibujarNodo(Graphics graphics, Nodo nodo, int x, int y, int distancia)
+        private void DibujarNodo(Graphics graphics, NodoAVL nodo, int x, int y, int distancia)
         {
             if (nodo != null)
             {
-                string texto = nodo.Data.ToString(); 
+                string texto = nodo.Data.ToString();
                 SizeF tamañoTexto = graphics.MeasureString(texto, this.Font);
                 RectangleF rectangulo = new RectangleF(x - tamañoTexto.Width / 2, y, tamañoTexto.Width, tamañoTexto.Height);
                 graphics.FillRectangle(Brushes.White, rectangulo);
                 graphics.DrawRectangle(Pens.Black, x - tamañoTexto.Width / 2, y, tamañoTexto.Width, tamañoTexto.Height);
                 graphics.DrawString(texto, this.Font, Brushes.Black, rectangulo);
 
-                if (nodo.Izquierda != null) 
-                { 
-                    graphics.DrawLine(Pens.Black, x, y + tamañoTexto.Height / 2, x - distancia, y + 50); 
-                    DibujarNodo(graphics, nodo.Izquierda, x - distancia, y + 50, distancia / 2); 
+                if (nodo.Izquierda != null)
+                {
+                    graphics.DrawLine(Pens.Black, x, y + tamañoTexto.Height / 2, x - distancia, y + 50);
+                    DibujarNodo(graphics, nodo.Izquierda, x - distancia, y + 50, distancia / 2);
                 }
 
-                if (nodo.Derecho != null) 
+                if (nodo.Derecha != null)
                 {
                     graphics.DrawLine(Pens.Black, x, y + tamañoTexto.Height / 2, x + distancia, y + 50);
-                    DibujarNodo(graphics, nodo.Derecho, x + distancia, y + 50, distancia / 2);
+                    DibujarNodo(graphics, nodo.Derecha, x + distancia, y + 50, distancia / 2);
                 }
             }
         }

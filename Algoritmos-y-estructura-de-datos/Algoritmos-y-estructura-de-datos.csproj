@@ -62,8 +62,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algoritmos\QuickSort.cs" />
+    <Compile Include="Clases\ArbolAVL.cs" />
     <Compile Include="Clases\ArbolBinario.cs" />
+    <Compile Include="Clases\Arista.cs" />
+    <Compile Include="Clases\Grafo.cs" />
     <Compile Include="Clases\Nodo.cs" />
+    <Compile Include="Clases\NodoAVL.cs" />
+    <Compile Include="Clases\Vertice.cs" />
     <Compile Include="Formularios\BubleSort.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,11 +81,35 @@
     <Compile Include="Formularios\Floyd-Warshall.Designer.cs">
       <DependentUpon>Floyd-Warshall.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmArbolAVL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmArbolAVL.Designer.cs">
+      <DependentUpon>frmArbolAVL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmArbolBinario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmArbolBinario.Designer.cs">
       <DependentUpon>frmArbolBinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmDIJKSTRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmDIJKSTRA.Designer.cs">
+      <DependentUpon>frmDIJKSTRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmListaDoble.Designer.cs">
+      <DependentUpon>frmListaDoble.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmQuickSort.cs">
       <SubType>Form</SubType>
@@ -99,6 +128,12 @@
     </Compile>
     <Compile Include="Formularios\ListaDoble.Designer.cs">
       <DependentUpon>ListaDoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ListasDobles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListasDobles.Designer.cs">
+      <DependentUpon>ListasDobles.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ListaSimple.cs">
       <SubType>Form</SubType>
@@ -130,6 +165,12 @@
     <Compile Include="Formularios\SelectionSort.Designer.cs">
       <DependentUpon>SelectionSort.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ShakerSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ShakerSort.Designer.cs">
+      <DependentUpon>ShakerSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ShellSort.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +183,7 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\BubleSort.resx">
@@ -153,11 +195,20 @@
     <EmbeddedResource Include="Formularios\FormColaCircular.resx">
       <DependentUpon>FormColaCircular.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmArbolAVL.resx">
+      <DependentUpon>frmArbolAVL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmArbolBinario.resx">
       <DependentUpon>frmArbolBinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmColas.resx">
       <DependentUpon>frmColas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmDIJKSTRA.resx">
+      <DependentUpon>frmDIJKSTRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmListaDoble.resx">
+      <DependentUpon>frmListaDoble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
@@ -168,11 +219,17 @@
     <EmbeddedResource Include="Formularios\ListaDoble.resx">
       <DependentUpon>ListaDoble.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListasDobles.resx">
+      <DependentUpon>ListasDobles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ListaSimple.resx">
       <DependentUpon>ListaSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\SelectionSort.resx">
       <DependentUpon>SelectionSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ShakerSort.resx">
+      <DependentUpon>ShakerSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ShellSort.resx">
       <DependentUpon>ShellSort.cs</DependentUpon>
@@ -180,6 +237,19 @@
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.BubleSort.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.Floyd_Warshall.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.FormColaCircular.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.frmArbolBinario.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.frmColas.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.frmPilas.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.HeapSort.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.ListaDoble.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.ListaSimple.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.SelectionSort.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Formularios.ShellSort.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.frmPrincipal.resources" />
+    <EmbeddedResource Include="obj\Debug\Algoritmos_y_estructura_de_datos.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -189,6 +259,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\Algoritmos-y-estructura-de-datos.exe.config" />
+    <None Include="obj\Debug\Algoritmos-y-estructura-de-datos.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\Algoritmos-y-estructura-de-datos.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Algoritmos-y-estructura-de-datos.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -202,7 +278,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\Algoritmos-y-estructura-de-datos.exe" />
+    <Content Include="bin\Debug\Algoritmos-y-estructura-de-datos.pdb" />
+    <Content Include="obj\Debug\Algoritmos-y-estructura-de-datos.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Algoritmos-y-estructura-de-datos.exe" />
+    <Content Include="obj\Debug\Algoritmos-y-estructura-de-datos.pdb" />
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
@@ -214,6 +296,10 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
