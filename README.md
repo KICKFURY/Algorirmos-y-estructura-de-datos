@@ -29,6 +29,8 @@
 			<li>Colas</li>
 			<li>QuickSort</li>
 			<li>Árboles binarios</li>
+			<li>Árboles AVL</li>
+			<li>Algoritmo de Dijkstra</li>
 		</td>
 	</tr>
    <tr>
@@ -45,6 +47,8 @@
 			<li>Lista simple</li>
 			<li>BubleSort</li>
 			<li>SelectSort</li>
+			<li>ShellSort</li>
+			<li>Algoritmo de Floyd-Warshall</li>
 		</td>
 	</tr>
       <tr>
@@ -60,6 +64,8 @@
 			<li>Pilas</li>
 			<li>Listas dobles</li>
 			<li>HeapSort</li>
+			<li>ShakerSort</li>
+			<li>Algoritmo de Marshall</li>
 		</td>
 	</tr>
  </table>
@@ -71,4 +77,4 @@ Este proyecto abarca diversos algoritmos y estructuras de datos, organizados en 
 - **Listas**: Implementaciones de listas simples y listas dobles.
 - **Algoritmos de Ordenamiento**: Implementaciones de algoritmos como BubbleSort, QuickSort, HeapSort, SelectionSort, ShakerSort y ShellSort.
 - **Árboles**: Implementaciones de árboles binarios y árboles AVL.
-- **Grafos**: Implementaciones de algoritmos de grafos como Dijkstra, Floyd y Warshall.
+- **Grafos**: Implementaciones de algoritmos de grafos como Dijkstra, Floyd-Warshall y Marshall.
